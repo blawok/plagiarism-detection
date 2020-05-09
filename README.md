@@ -4,17 +4,21 @@ Plagiarism detector that examines a text file and performs binary classification
 
 Deployed on AWS SageMaker.
 
+## Notebooks
+
 [see the list of notebooks](https://github.com/blawok/plagiarism_detection/search?l=jupyter-notebook)
 
 [**Feature Engineering**](https://github.com/blawok/plagiarism_detection/blob/master/2_Plagiarism_Feature_Engineering.ipynb)
 
 [**Training and Deployment of the Model in SageMaker**](https://github.com/blawok/plagiarism_detection/blob/master/3_Training_a_Model.ipynb)
 
+## Model
 Random Forest model on three features that I have created:
 * Intersection of the 1-gram word count (containment)
 * Intersection of the 9-gram word count (containment)
 * Longest Common Subsequence
 
+## Evaluation
 Model achieves 96% accuracy - one observation was missclassified (red dot). 
 ![plag](https://user-images.githubusercontent.com/41793223/81398954-7d982b80-912a-11ea-972c-dacec4ad7fd0.JPG)
 
